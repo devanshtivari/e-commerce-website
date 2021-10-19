@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Order form</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main-block">
+      <h1>PRODUCT DETAILS</h1>
+      <form action="data-insert.php" method="POST">
+        <div class="info">
+          <input class="fname" type="text" name="name" placeholder="Product Name">
+          <input type="number" name="Price" placeholder="0">
+          <input type="text" name="Description" placeholder="Description">
+          <input type="date" name="date" placeholder="Order date dd/mm/yyyy">
+          <select name="stars">
+            <option value="number" disabled selected>Number of stars</option>
+            <option value="10">1</option>
+            <option value="20">2</option>
+            <option value="30">3</option>
+            <option value="40">4</option>
+            <option value="50">5</option>
+          </select>
+        </div>
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
